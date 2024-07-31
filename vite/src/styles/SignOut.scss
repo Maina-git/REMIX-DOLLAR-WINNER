@@ -1,0 +1,45 @@
+@import "../Variables.scss";
+@import "../styles/Mixins.scss";
+
+.SignOut{
+    display:flex;
+    flex-direction:row;
+justify-content:center;
+align-items:center;
+place-items:center;
+height:100vh;
+gap:20px;
+@include respond(phone){
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+}
+
+.icon{
+    font-size:150px;
+    margin:50px;
+    color:$bluewewant;
+}
+p{
+    font-size:20px;
+    font-family:sans-serif;
+    color:$bluewewant;
+}
+button{
+    background:$bluewewant;
+    color:$white;
+    border:0;
+    outline:none;
+    padding:10px 30px;
+    cursor:pointer;
+}
+
+
+
+}
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+@import "../Variables.scss";
+@import "../styles/Mixins.scss";
+
+.exchange{
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ place-items:center;
+ height:100vh;
+ 
+ .dep{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    place-items:center;
+    margin:50px 0;
+    border:3px solid $amber;
+    padding:15px;
+    border-radius:10px;
+    @include respond(phone){
+        border:0;
+        display:flex;
+        gap:50px;
+
+    }
+
+.icon{
+    font-size:100px;
+    color:$bluewewant;
+}
+
+    form{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        margin:10px;
+
+@include respond(phone){
+    gap:50px;
+}
+
+        span{
+            font-size:20px;
+            font-family:sans-serif;
+            color:$bluewewant;
+        }
+        input{
+            border:1px solid $bluewewant;
+            padding:10px 20px;
+            color:$bluewewant;
+            border-radius:20px;
+        }
+        button{
+            background:$bluewewant;
+            color:$white;
+            padding:20px 30px;
+            font-family:sans-serif;
+            cursor:pointer;
+            border-radius:10px;
+            outline:none;
+            border:0;
+ @include respond(phone){
+    padding:20px;
+    border-radius:30px;
+ }
+
+        }
+    }
+ }
+
+
+}
